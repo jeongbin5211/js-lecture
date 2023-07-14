@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수 사용 예제</title>
+</head>
+<body>
+<!-- 
+Practice
+
+나이 계산 프로그램 만들기
+
+올해 연도, 태어난 연도, 나이에 대한 변수 선언
+올해 연도를 나타내는 변수에는 2023(올해 연도) 값 할당
+
+태어난 연도의 경우 prompt창에서 값을 받아옵니다. (할당)
+나이 변수에 올해 연도와 태어난 연도를 사용하여 식을 완성
+
+웹 브라우저에 결과 출력
+
+올해는 2023년 입니다.
+'태어난 연도'에 태어난 사람의 나이는 "나이"세 입니다.
+-->
+  <script>
+    let currentYear = 2023;
+    let birthYear = prompt('태어난 연도를 입력하세요.');
+    let age = (currentYear - birthYear) + 1;
+    
+    document.write('올해는' + currentYear + '년 입니다. <br />');
+    document.write(birthYear + '에 태어난 사람의 나이는' + age + '세 입니다.');
+
+    
+  </script>
+</body>
+</html>
