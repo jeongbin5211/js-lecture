@@ -54,9 +54,9 @@ btn.addEventListener('click', function() {
 let parent = document.getElementById('parent');
 let child = document.getElementById('child');
 
-parent.addEventListener('click', function () {
+parent.addEventListener('click', function (event) {
     alert('부모 요소 클릭');
-    event.stopPropagation(); // 캡처링 중지
+    // event.stopPropagation(); // 캡처링 중지
 });
 
 child.addEventListener('click', function (event) {
